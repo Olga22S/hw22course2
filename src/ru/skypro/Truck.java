@@ -8,12 +8,11 @@ public class Truck extends Car {
 
     @Override
     public void serve() {
-        updateTyre();
-        checkEngine();
+        super.serve();
         checkTrailer();
     }
 
-    public void checkTrailer() {
+    private void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
 }
