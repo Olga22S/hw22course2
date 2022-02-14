@@ -6,6 +6,12 @@ public class Car extends Transport {
         super(modelName, wheelsCount);
     }
 
+    @Override
+    public void serve() {
+        updateTyre();
+        checkEngine();
+    }
+
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
